@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+header{
+    position: relative;
+    border-radius: 7%;
+    border:solid 2px black;
+    width: 80vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 6s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: aquamarine;
+  }
+  50% {
+    background-color:cornflowerblue;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+header h1{
+    font-family:cursive;
+    font-size: 2.3vw;
+    font-weight: bolder;
+    cursor: pointer;
+    color: yellowgreen;
+    opacity: 80%;
+    animation: walk 3s infinite linear;
+}
+@keyframes walk {
+    0% {
+        transform: translateX(100px);
+    }
+    25% {
+        transform: translateX(50px);
+    }
+    40% {
+        transform: translateY(80px);
+    }
+    70% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+    0% {
+        transform: translateY(50px);
+    }
+}
+
